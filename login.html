@@ -131,7 +131,7 @@
                     <input type="password" id="password" placeholder="Password" name="password" required>
                 </div>
                 <button type="button" class="btn" onclick="signin()">Login</button>
-                <p class="signup-link">Don't have an account? <a href="/signup">Sign Up</a></p>
+                <p class="signup-link">Don't have an account? <a href="signup.html">Sign Up</a></p>
             </form>
         </div>
     </div>
@@ -158,7 +158,7 @@
             })
             .then(response => {
                 if (response.status === 200) {
-                    window.location.assign("/admindashboard");
+                    window.location.assign("admindashboard.html");
                 } else if (response.status === 401) {
                     alert("Invalid credentials. Please try again.");
                 } else {
